@@ -4,6 +4,7 @@ import AnimatedLetters from "../AnimatedLetters";
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCss3, faHtml5, faJsSquare, faNodeJs, faReact, faSass } from "@fortawesome/free-brands-svg-icons";
+import Loader from "react-loaders";
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -14,7 +15,8 @@ const About = () => {
     }, [])
 
     return (
-        <div className="container about-page">
+        <>
+            <div className="container about-page">
             <div className="text-zone">
                 <h1>
                     <AnimatedLetters 
@@ -58,7 +60,9 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
+            <Loader type="ball-spin-fade-loader"/>
+        </>
     )
 }
 

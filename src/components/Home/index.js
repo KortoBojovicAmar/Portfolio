@@ -4,6 +4,7 @@ import LogoTitle from '../../assets/images/logo-s.png';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 import Logo from './Logo';
+import Loader from 'react-loaders';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -18,21 +19,24 @@ const Home = () => {
     }, [])
 
     return (
-        <div className='container home-page'>
-            <div className='text-zone'>
-                <h1>
-                <AnimatedLetters letterClass={letterClass} stringArray={hiArray} index={12}/>
-                <br/> 
-                <img src={LogoTitle} alt='developer'/>
-                <AnimatedLetters letterClass={letterClass} stringArray={nameArray} index={15}/>
-                <br/>
-                <AnimatedLetters letterClass={letterClass} stringArray={jobArray} index={22}/>
-                </h1>
-                <h2> Developpeur Web et Webmobile</h2>
-                <Link to='/contact' className='flat-button'>CONTACTEZ MOI</Link>
+        <>
+            <div className='container home-page'>
+                <div className='text-zone'>
+                    <h1>
+                    <AnimatedLetters letterClass={letterClass} stringArray={hiArray} index={12}/>
+                    <br/> 
+                    <img src={LogoTitle} alt='developer'/>
+                    <AnimatedLetters letterClass={letterClass} stringArray={nameArray} index={15}/>
+                    <br/>
+                    <AnimatedLetters letterClass={letterClass} stringArray={jobArray} index={22}/>
+                    </h1>
+                    <h2> Developpeur Web et Webmobile</h2>
+                    <Link to='/contact' className='flat-button'>CONTACTEZ MOI</Link>
+                </div>
+                <Logo/>
             </div>
-            <Logo/>
-        </div>
+            <Loader type="ball-spin-fade-loader"/>
+        </>
     )
 }
 
