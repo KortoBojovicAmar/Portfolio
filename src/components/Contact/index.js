@@ -20,7 +20,7 @@ const Contact = () => {
         event.preventDefault()
 
         emailjs
-        .sendForm('service_41okf6k', 'template_7kbn7ts', refForm.current, 'n20PDO5k7cFg9zEZr')
+        .sendForm(process.env.REACT_APP_SERVICE, process.env.REACT_APP_TEMPLATE, refForm.current, process.env.REACT_APP_KEY)
         .then (
             () => {
                 console.log("message envoyé")
