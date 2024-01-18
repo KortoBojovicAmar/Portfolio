@@ -12,6 +12,15 @@ $primary-color: #ffffff;
 }
 
 @font-face {
+  font-family: 'Lucida Console';
+  src: url('./assets/fonts/LucidaConsole.ttf') format('ttf');
+  src: url('./assets/fonts/LucidaConsole.woff') format('woff');
+  src: url('./assets/fonts/LucidaConsole.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'La Belle Aurore';
   src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2'),
     url('./assets/fonts/LaBelleAurore.woff') format('woff');

@@ -2,9 +2,10 @@ import "./index.scss";
 import "../Layout/index.scss"
 import AnimatedLetters from "../AnimatedLetters";
 import { useState, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCss3, faHtml5, faJsSquare, faNodeJs, faReact, faSass } from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCss3, faHtml5, faJsSquare, faNodeJs, faReact, faSass } from "@fortawesome/free-brands-svg-icons";
 import Loader from "react-loaders";
+import Logo from "./Logo";
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -38,7 +39,7 @@ const About = () => {
                     Only files inside the `public` folder can be referenced from the HTML.
                 </p>
             </div>
-            <div className="stage-cube-cont">
+            {/* <div className="stage-cube-cont">
                 <div className="cubespinner">
                     <div className="face1">
                         <FontAwesomeIcon icon={faHtml5} color="#F06529"/>
@@ -59,8 +60,9 @@ const About = () => {
                         <FontAwesomeIcon icon={faSass} color="#C66394"/>
                     </div>
                 </div>
+            </div> */}
             </div>
-            </div>
+            <Logo/>
             <Loader type="ball-spin-fade-loader"/>
         </>
     )
