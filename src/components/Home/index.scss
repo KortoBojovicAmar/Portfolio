@@ -10,7 +10,8 @@
   
     h1 {
       color: #fff;
-      font-size: 60px;
+      // font-size: 66px;
+      font-size: 30px;
       line-height: 68px;
       margin: 0;
       font-family: 'Lucida Console';
@@ -20,7 +21,8 @@
       img {
         position: absolute;
         top: 21%;
-        left: -3px;
+        // left: -3px;
+        left: -18%;
         opacity: 0;
         width: 52px;
         height: auto;
@@ -40,7 +42,7 @@
         color: #8d8d8d;
         margin-top: 20px;
         font-weight: 400;
-        font-size: 11px;
+        font-size: 16px;
         font-family: sans-serif;
         letter-spacing: 3px;
         animation: fadeIn 1s 1.8s backwards;
@@ -66,14 +68,7 @@
         }
       }
 .stage-cube-cont {
-  width: 70%;
-  height: 65%;
-  top: 0;
-  padding-top: 20%;
-  margin-left: 0;
-  position: absolute;
-  right: 0;
-  overflow: hidden;
+  display: none;
 }
 
 .cubespinner {
@@ -91,7 +86,7 @@
       height: 450px;
       border: 1px solid #ccc;
       background: rgba(255,255,255, 0.4);
-      font-size: 250px;
+      font-size: 350px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -146,6 +141,29 @@
     transform: rotateX(90deg);
   }
 }
-      
+
+@media screen and (min-width: 600px) {
+ 
+  .stage-cube-cont {
+    width: 70%;
+    height: 65%;
+    top: 0;
+    padding-top: 20%;
+    margin-left: 0;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+  }
 }
+br .br-is-mobile {
+  display: none;
+}
+
+// .logo{
+//   display: absolute;
+//   left: -10%
+// }
+
+}
+
 

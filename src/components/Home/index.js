@@ -26,7 +26,7 @@ const Home = () => {
                     <h1>
                     <AnimatedLetters letterClass={letterClass} stringArray={hiArray} index={12}/>
                     <br/> 
-                    <img src={LogoK} alt='developer'/>
+                    <img className='logo' src={LogoK} alt='developer'/>
                     <span className='absolute-text'>
                         <AnimatedLetters letterClass={letterClass} stringArray={nameArray} index={15}/>
                     </span>
@@ -42,7 +42,7 @@ const Home = () => {
                             <FontAwesomeIcon icon={faHtml5} color="#F06529"/>
                         </div>
                         <div className="face2">
-                            <FontAwesomeIcon icon={faCss3} color="#28A4D9"/>
+                            <FontAwesomeIcon icon={faReact} color="#087A9F"/>
                         </div>
                         <div className="face3">
                             <FontAwesomeIcon icon={faNodeJs} color="#539E43"/>
@@ -51,7 +51,7 @@ const Home = () => {
                             <FontAwesomeIcon icon={faJsSquare} color="#EFD81D"/>
                         </div>
                         <div className="face5">
-                            <FontAwesomeIcon icon={faReact} color="#087A9F"/>
+                            <FontAwesomeIcon icon={faCss3} color="#28A4D9"/>
                         </div>
                         <div className="face6">
                             <FontAwesomeIcon icon={faSass} color="#C66394"/>

@@ -1,4 +1,3 @@
-
 html {
   font-size: 62.5%;
 }
@@ -11,5 +10,24 @@ body {
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  display: block;
+}
+
+.dashboard {
+  margin-top: 200px;
+  margin-left: 200px;
+}
+
+canvas {
+  display: flex;
+  width: 50%;
+
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    overflow: visible;
+  }
 }
 

@@ -4,6 +4,7 @@ import './index.scss';
 import AnimatedLetters from '../AnimatedLetters'
 import { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import ThreeDeeObject from './3dObject';
 
 const Contact = () => {
 
@@ -36,6 +37,9 @@ const Contact = () => {
     return (
         <>
             <div className='container contact-page'>
+            <div id='container3D'>
+                            <ThreeDeeObject />
+                        </div>
                 <div className="text-zone">
                     <h1>
                         <AnimatedLetters 
