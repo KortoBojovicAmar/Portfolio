@@ -18,7 +18,7 @@ const Mail = () => {
     }, [])
 
     return (
-        <div className='logo-container-about' ref={bgRef}>
+        <div className='logo-container-contact' ref={bgRef}>
             <img ref={solidLogoRef} className='solid-logo' src={mailPicture} alt="Lettre"/>
             <svg
         width="559pt"
