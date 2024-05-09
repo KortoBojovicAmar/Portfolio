@@ -57,7 +57,7 @@
             margin-top: 0;
             position: relative;
             margin-bottom: 40px;
-            left: 10%;
+            // left: 10%;
 
             &::before {
                 font-family: "Lucida Console";
@@ -102,4 +102,22 @@
             }
         }
     }
+}
+
+
+@media screen and (max-width: 480px) {
+
+.about-page, .contact-page {
+    .text-zone {
+
+        width: 80%;
+        right: 10%;
+
+        h1 {
+            font-size: 35px;
+        }
+
+    }
+}
+
 }

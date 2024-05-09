@@ -12,13 +12,16 @@
 
     .logo {
         display: block;
-        padding: 8px 0;
+        padding: 8px;
 
         img {
             display: block;
-            margin: 8px auto;
+            margin: 8px;
             width: 34px;
             height: auto;
+            ////////////// test ////
+            animation: rotateIn 1s linear both;
+            animation-delay: 1.4s;
 
             &.sub-logo {
                 width: 50px;
@@ -45,7 +48,7 @@
             text-decoration: none;
 
             i {
-                transition: all 0.3s ease-out;
+                transition: all 0.3s ease-in-out;
             }
 
             &:hover {
@@ -70,12 +73,12 @@
                 width: 100%;
                 text-align: center;
                 opacity: 0;
-                transition: all 0.3s ease-out;
+                transition: all 0.3s ease-in-out;
             }
 
             &:first-child {
                 &::after {
-                    content: 'ACCEUIL';
+                    content: 'ACCUEIL';
                 }
             }
         }
@@ -124,3 +127,9 @@
     }
     
 }
+
+@media screen and (min-width: 481px) {
+    .nav-bar{
+        display: flex;
+    }
+  }

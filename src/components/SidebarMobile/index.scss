@@ -1,7 +1,7 @@
 .nav-bar-mobile {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background: #181818;
     font-size: 20px;
@@ -13,9 +13,15 @@
         display: flex;
         // justify-content: center;
         align-items: center;
+        max-width: 6rem;
+      
+
 
         img {
             width: 80%;
+            ////////////// test ////
+            animation: rotateIn 1s linear both;
+            animation-delay: 1.4s;
 
             &.sub-logo {
                 width: 50px;
@@ -24,8 +30,11 @@
     }
     nav {
         display: flex;
+        flex-direction: row;
         align-items: center;
         max-height: 10vh;
+        justify-content: space-around;
+        width: 100%;
 
         a {
             text-decoration: none;
@@ -101,3 +110,9 @@
         }   
     }
 }
+
+@media screen and (min-width: 481px) {
+    .nav-bar-mobile{
+        display: none;
+    }
+  }

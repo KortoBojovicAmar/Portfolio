@@ -19,22 +19,22 @@
       letter-spacing: 0px;
       
       img {
-        position: absolute;
-        top: 21%;
+        // position: absolute;
+        // top: 21%;
         // left: -3px;
-        left: -18%;
+        // left: -18%;
         opacity: 0;
         width: 52px;
         height: auto;
         animation: rotateIn 1s linear both;
         animation-delay: 1.4s;
       }
-
-
+      
       .absolute-text {
         top: 22%;
         left: 6%;
         position: absolute;
+        margin-left: 3rem;
       }
     }
 
@@ -142,8 +142,9 @@
   }
 }
 
+
 @media screen and (min-width: 600px) {
- 
+  
   .stage-cube-cont {
     width: 70%;
     height: 65%;
@@ -165,5 +166,12 @@ br .br-is-mobile {
 // }
 
 }
+
+@media screen and (min-width: 481px){
+  .home-page .stage-cube-cont {
+    display: block;
+  }
+}
+
 
 
