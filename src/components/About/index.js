@@ -23,24 +23,27 @@ const About = () => {
                         <AnimatedLetters 
                         index={15} letterClass={letterClass} stringArray={['Q', 'u', 'i', ' ', 's', 'u', 'i', 's', '-', 'j', 'e', ' ', '?']}/>
                     </h1>
-                    <p>      
-                        Notice the use of %PUBLIC_URL% in the tags above.
-                        It will be replaced with the URL of the `public` folder during the build.
-                        Only files inside the `public` folder can be referenced from the HTML.
-                    </p>
-                    <p>      
-                        Notice the use of %PUBLIC_URL% in the tags above.
-                        It will be replaced with the URL of the `public` folder during the build.
-                        Only files inside the `public` folder can be referenced from the HTML.
-                    </p>
-                    <p>      
-                        Notice the use of %PUBLIC_URL% in the tags above.
-                        It will be replaced with the URL of the `public` folder during the build.
-                        Only files inside the `public` folder can be referenced from the HTML.
-                    </p>
+                    <div className="paragraph-container">
+                        <p>      
+                            Diplômé d’un master en arts visuels en 2017,
+                            j’ai exercé en tant qu’artiste plasticien, commissaire d’exposition,
+                            et responsable d’un espace d’art. Après un post-master en art numérique en 2022,
+                            j’ai entrepris une reconversion professionnelle pour devenir développeur web.
+                        </p>
+                        <p>      
+                            Lors d’une formation d’un an, J’ai eu l’opportunité d’apprendre les bonnes pratiques html,
+                            notamment l’accessibilité, et les technologies suivantes :
+                            CSS, Sass, JavaScript avec les frameworks React et Vue.Js côté front-end.
+                            Coté back-end j’ai été formé sur Express avec Node.Js,
+                            j’ai également appris à modéliser une base de données relationnelle avec PostgreSQL.
+                        </p>
+                        <p>      
+                            J’ai désormais pour ambition d'approfondir et d’étoffer mes connaissances afin d’ouvrir le champ des possibles.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <Logo/>
+            <Logo className="mobile-K"/>
             <Loader type="ball-spin-fade-loader"/>
         </>
     )

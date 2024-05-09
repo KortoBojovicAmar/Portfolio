@@ -4,6 +4,7 @@ import './index.scss';
 import AnimatedLetters from '../AnimatedLetters'
 import { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Mail from './Mail';
 // import ThreeDeeObject from './3dObject';
 
 const Contact = () => {
@@ -46,8 +47,7 @@ const Contact = () => {
                         index={15} letterClass={letterClass} stringArray={['C', 'o', 'n', 't', 'a', 'c', 't', 'e', 'z', ' ', ' ', 'm', 'o', 'i']}/>
                     </h1>
                     <p>
-                        Notice the use of %PUBLIC_URL% in the tags above. It will be replaced with the URL of the `public` folder during the build. Only files inside the `public` folder can be referenced from the HTML.
-                        Notice the use of %PUBLIC_URL% in the tags above. It will be replaced with the URL of the `public` folder during the build. Only files inside the `public` folder can be referenced from the HTML. 
+                    Si vous êtes intéressé par mon profil, joignez moi via LinkedIn ou ce formulaire !
                     </p>
                     <div className='contact-form'>
                         <form ref={refForm} onSubmit={sendEmail} >
@@ -72,6 +72,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+            <Mail/>
             <Loader type="ball-spin-fade-loader"/>
         </>
     )

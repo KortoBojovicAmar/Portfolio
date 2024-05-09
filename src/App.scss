@@ -55,3 +55,10 @@ textarea {
   animation: fadeOut 1s 0.5s;
   animation-fill-mode: forwards;
 }
+
+@media screen and (max-width: 480px) {
+
+  body .loader-active {
+    width: 0%;
+  }
+}

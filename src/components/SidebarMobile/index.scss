@@ -9,19 +9,16 @@
 
     .logo {
         // padding: 2em 0rem 2em 1em;
-        width: 20%;
+        width: 40%;
         display: flex;
         // justify-content: center;
         align-items: center;
         max-width: 6rem;
-      
+        margin-right: -2rem;
 
 
         img {
             width: 80%;
-            ////////////// test ////
-            animation: rotateIn 1s linear both;
-            animation-delay: 1.4s;
 
             &.sub-logo {
                 width: 50px;
@@ -78,6 +75,12 @@
         a.contact-link {
             &:after {
                 content: 'CONTACT ';
+            }
+        }
+
+        a.projects-link {
+            &:after {
+                content: 'PROJETS ';
             }
         }
 

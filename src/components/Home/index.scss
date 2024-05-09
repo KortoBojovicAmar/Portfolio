@@ -34,7 +34,7 @@
         top: 22%;
         left: 6%;
         position: absolute;
-        margin-left: 3rem;
+        margin-left: 1.5rem;
       }
     }
 
@@ -67,58 +67,59 @@
           color: #333;
         }
       }
-.stage-cube-cont {
-  display: none;
-}
 
-.cubespinner {
-  animation-name: spincube;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 12s;
-  transform-style: preserve-3d;
-  transform-origin: 200px 200px 0;
-  margin-left: calc(50% - 100px);
-
-  div {
-      position: absolute;
-      width: 450px;
-      height: 450px;
-      border: 1px solid #ccc;
-      background: rgba(255,255,255, 0.4);
-      font-size: 350px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 0 20px 0px lightyellow;
-  }
-
-  .face1 {
-      transform: translateZ(225px);
-      color: #F06529;
-      }
-      .face2 {
-      transform: rotateY(90deg) translateZ(225px);
-      color: #28A4D9;
-      }
-      .face3 {
-      transform: rotateY(90deg) rotateX(90deg) translateZ(225px);
-      color: #539E43;
-      }
-      .face4 {
-      transform: rotateY(180deg) rotateZ(90deg) translateZ(225px);
-      color: #EFD81D;
-      }
-      .face5 {
-      transform: rotateY(-90deg) rotateZ(90deg) translateZ(225px);
-      color: #087A9F;
-      }
-      .face6 {
-      transform: rotateX(-90deg) translateZ(225px);
-      color: #C66394;
+      .stage-cube-cont {
+        display: none;
       }
 
-}
+      .cubespinner {
+        animation-name: spincube;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 12s;
+        transform-style: preserve-3d;
+        transform-origin: 100px 100px 0;
+        margin-left: calc(50% - 100px);
+
+        div {
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            border: 1px solid #ccc;
+            background: rgba(255,255,255, 0.4);
+            font-size: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 20px 0px lightyellow;
+        }
+
+        .face1 {
+            transform: translateZ(125px);
+            color: #F06529;
+            }
+            .face2 {
+            transform: rotateY(90deg) translateZ(125px);
+            color: #28A4D9;
+            }
+            .face3 {
+            transform: rotateY(90deg) rotateX(90deg) translateZ(125px);
+            color: #539E43;
+            }
+            .face4 {
+            transform: rotateY(180deg) rotateZ(90deg) translateZ(125px);
+            color: #EFD81D;
+            }
+            .face5 {
+            transform: rotateY(-90deg) rotateZ(90deg) translateZ(125px);
+            color: #087A9F;
+            }
+            .face6 {
+            transform: rotateX(-90deg) translateZ(125px);
+            color: #C66394;
+            }
+
+      }
 
 @keyframes spincube {
   from,
@@ -156,13 +157,9 @@
     overflow: hidden;
   }
 }
-br .br-is-mobile {
-  display: none;
-}
 
-// .logo{
-//   display: absolute;
-//   left: -10%
+// br .br-is-mobile {
+//   display: none;
 // }
 
 }
@@ -173,5 +170,13 @@ br .br-is-mobile {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .home-page h1 .absolute-text {
+    top: 22%;
+    left: 6%;
+    position: absolute;
+    margin-left: 4rem;
+  }
+}
 
 
