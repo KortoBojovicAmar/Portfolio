@@ -5,7 +5,7 @@ import AnimatedLetters from '../AnimatedLetters';
 import Loader from 'react-loaders';
 import LogoK from '../../assets/images/logo-Kondulé.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCss3, faHtml5, faJsSquare, faNodeJs, faReact, faSass } from "@fortawesome/free-brands-svg-icons";
+import { faVuejs, faCss3, faHtml5, faJsSquare, faNodeJs, faReact, faSass } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -51,7 +51,7 @@ const Home = () => {
                             <FontAwesomeIcon icon={faJsSquare} color="#EFD81D"/>
                         </div>
                         <div className="face5">
-                            <FontAwesomeIcon icon={faCss3} color="#28A4D9"/>
+                            <FontAwesomeIcon icon={faVuejs} color="#3FB27F"/>
                         </div>
                         <div className="face6">
                             <FontAwesomeIcon icon={faSass} color="#C66394"/>
