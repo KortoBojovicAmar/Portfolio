@@ -1,4 +1,6 @@
 import Loader from 'react-loaders';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "../Layout/index.scss";
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters'
@@ -22,15 +24,16 @@ const Contact = () => {
         event.preventDefault()
 
         emailjs
-        .sendForm(process.env.REACT_APP_SERVICE, process.env.REACT_APP_TEMPLATE, refForm.current, process.env.REACT_APP_KEY)
+        .sendForm(process.env.REACT_APP_SERVICE, process.env.REACT_APP_TEMPLATE, refForm.current, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
         .then (
             () => {
                 console.log("message envoyé")
-                alert('Votre message a été envoyé')
-                window.location.reload(false)
+                toast.success("Message envoyé !");
+                refForm.current.reset(); // Reset the form
             },
             () => {
                 alert("Votre message n'a pu être envoyé. Veuillez réésayer.")
+                toast.error("Erreur lors de l'envoi du mail !");
             }
         )
     }
@@ -41,6 +44,11 @@ const Contact = () => {
             {/* <div id='container3D'>
                 <ThreeDeeObject />
             </div> */}
+            <ToastContainer
+                position="top-right"
+                autoClose={3000}
+                theme="colored"
+            />
                 <div className="text-zone">
                     <h1>
                         <AnimatedLetters 
