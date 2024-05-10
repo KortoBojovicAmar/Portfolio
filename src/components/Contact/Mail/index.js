@@ -1,25 +1,10 @@
 import './index.scss';
 import mailPicture from '../../../assets/images/Lettre_portfolio.png';
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap-trial';
-import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin';
 
 const Mail = () => {
-    const bgRef = useRef();
-    const outlineLogoRef = useRef();
-    const solidLogoRef = useRef();
-
-    useEffect(() => {
-        gsap.registerPlugin(DrawSVGPlugin)
-        gsap.timeline()
-        .to(bgRef.current, {duration:0, opacity: 1})
-        .from(outlineLogoRef.current, {drawSVG:0, duration: 0})
-        gsap.fromTo(solidLogoRef.current, {opacity: 0}, {opacity: 1, delay: 3, duration: 3})
-    }, [])
-
     return (
-        <div className='logo-container-contact' ref={bgRef}>
-            <img ref={solidLogoRef} className='solid-logo' src={mailPicture} alt="Lettre"/>
+        <div className='logo-container-contact'>
+            <img className='solid-logo' src={mailPicture} alt="Lettre"/>
             <svg
         width="559pt"
         height="897pt"
