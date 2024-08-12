@@ -90,6 +90,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
+    a {
+        color: #2ef1a6;
+        text-decoration: none;
+    }
 }
 .carousel {
     width: 50%;
@@ -103,7 +108,6 @@
     .thumbs {
         display: none;
     }
-
 }
 
 

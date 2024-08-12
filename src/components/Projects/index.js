@@ -57,10 +57,13 @@ const Projects = () => {
                             Gas Diffusion est un outil de recherche qui permet à un utilisateur de déduire des propriétés physiques
                             à partir d’échantillons de ciment ou de béton.
                             Il s’agit de la migration et d’une refonte compléte de l’interface d’un outil plus ancien.
-                            La partie front-end est codée en Vue 3 et communique avec un back préexistant (Lambda python AWS).
+                            La partie front-end est codée en Vue 3 et communique avec un back préexistant (Lambda AWS / Python).
                             <br/>
                             <br/>
                             <i>(Projet réalisé lors d'un stage).</i>
+                            <br/>
+                            <br/>
+                            Lien vers l'<a className="application-link" href="https://dev.d35b2bs6q6ilgi.amplifyapp.com/" target="_blank">application</a>.
                         </h3>
                     </div>
                 </div>
@@ -79,9 +82,8 @@ const Projects = () => {
                         </Carousel>
                         <h3>
                             Green Roots est une plateforme web qui permet à ses usagers de participer à la reforestation via différentes campagnes.
-                            Le site propose plusieurs fonctionnalités en fonction du statut de l’usager.
-                            Après création d’un compte il est possible d’acheter des arbres qui seront plantés dans des zones spécifiques lors des campagnes.
-                            Les campagnes sont gérées par leurs créateurs. Il existe également un back office pour administrer l'application.
+                            Le site propose plusieurs fonctionnalités selon le statut de l’usager.
+                            Il existe également un back office pour administrer l'application.
                             La partie front-end à été écrite en React et la partie back-end avec Node.js et Express. La base de données à été créée avec PostgreSQL et liée avec Sequelize.
                             <br/>
                             <br/>
